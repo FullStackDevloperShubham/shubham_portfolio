@@ -3,12 +3,14 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import NavLink from './NavLink'
-import { delay, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const links = [
   { url: '/', title: "Home" },
   { url: '/about', title: "About" },
   { url: '/contact', title: "Contact" },
+  { url: '/Work', title: "Work" },
 ]
 
 
@@ -89,14 +91,14 @@ const Navbar = () => {
 
       {/* SOCIAL LINKS */}
       <div className='hidden md:flex gap-4 w-1/3 '>
-        <Link href="#">
-          <img src="/github.png" alt="GitHub Logo" width={24} height={24} />
+        <Link href="https://github.com/FullStackDevloperShubham">
+          <Image src="/github.png" alt="GitHub Logo" width={24} height={24} />
         </Link>
-        <Link href="#">
-          <img src="/instagram.png" alt="GitHub Logo" width={24} height={24} />
+        <Link href="https://www.instagram.com/developer_shubham_?igsh=MXJ1a2w2aWE0cTA0 ">
+          <Image src="/instagram.png" alt="GitHub Logo" width={24} height={24} />
         </Link>
-        <Link href="#">
-          <img src="/linkedin.png" alt="GitHub Logo" width={24} height={24} />
+        <Link href="https://www.linkedin.com/in/shubham-gaikwad-62499329a/">
+          <Image src="/linkedin.png" alt="GitHub Logo" width={24} height={24} />
         </Link>
       </div>
 

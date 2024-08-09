@@ -1,6 +1,0 @@
-time stamp 
-1:01:58 / 2:31:02
-
-lama dev
-
-framer - motion => new tech stck
